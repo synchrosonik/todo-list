@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+<body> 
+    <h1>todos</h1>
+    <section class="container">
+        <div class="form-container">
+            <form id="todo-form"action="" method="post">
+                <a href="#"><img src="icons/circle-down.svg" alt="" id="unchecked"></a>
+                <input id="text-input" type="text" name="" id="" placeholder="What needs to be done?">
+            </form>
+        </div>
+        <div>
+            <ul id="todo-list">
+
+            </ul>
+        </div>
+        
+        <div class="bottom-row">
+            <p class="btm-btn"><span id="item-left-count">1</span> item left</p>
+            <ul>
+                <li>
+                        <a href="#/all" class="btm-btn" id="all-focus">All</a>
+                </li>
+                <li>
+                        <a href="#/active" class="btm-btn">Active</a>
+                </li>
+                <li>
+                        <a href="#/completed" class="btm-btn">Completed</a>
+                </li>
+            </ul>
+                <a href="#" class="btm-btn" id="clear-completed">Clear completed</a>                         
+        </div>       
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

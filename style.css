@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+    color: #4D4D4D;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+.container {
+    background-color: #ffffff;
+    border: solid #E6E6E6 0.5px;
+    box-shadow: 1px 1px 5px #cccccc;
+    width: 500px;
+    margin: auto;  
+}
+h1 {
+    font-size: 78px;
+    color: #EAD7D7;
+    text-align: center;
+    margin-bottom: -1px;
+}
+ul {
+    padding-left: 0px;
+}
+li {
+    list-style-type: none;
+}
+
+.form-container {
+    box-shadow: 0px -1px 1px -1px #cccccc inset;
+    border: solid #E6E6E6 0.5px;
+    height: 50px;
+}
+#unchecked {
+    padding: 7px 7px 0px 7px;
+    opacity: 0.2;
+}
+#checked {
+    padding: 7px 7px 0px 7px;
+    opacity: 0.7;
+}
+
+#todo-list {
+    display: none;
+}
+#todo-form {
+    display: flex;
+    
+}
+#text-input {   
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    height: 45px;
+    font-size: 20px;
+    background: transparent;
+}
+#text-input::placeholder {
+    font-style: italic;
+    color: #E6E6E6;
+}
+form > input:focus {
+    outline: 0;
+}
+.btm-btn {
+    font-size: 13px;
+    color: #4D4D4D;
+    text-decoration: none;
+    border: none;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+}
+.btm-btn:visited {
+    text-decoration: none;
+}
+.btm-btn:focus {
+    border: solid #EAD7D7 0.5px;
+    border-radius: 5px;
+}
+.bottom-row {
+    display: none;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.bottom-row > ul {
+    display: flex;
+}
+#clear-completed {
+    visibility: hidden;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #E6E6E6 0.5px;
+}
+.list-item-checkbox {
+    padding: 10px;
+}
+.list-item-checkbox img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+}
+.list-item-text {
+    flex: 8;
+}
+.list-item a {
+    flex: 1;
+}
+.completed {
+    display: none;
+}
+.remove-icon {
+    opacity: 0.6;
+    width: 13px;
+    height: 13px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        min-width: 300px;
+    }
+    .bottom-row {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .bottom-row p {
+       margin: 10px auto 10px auto;
+       font-size: 20px;
+    }
+    .bottom-row > ul {
+       flex-direction: column;
+       text-align: center;
+       margin: 10px auto 5px auto;
+    }
+    .bottom-row li {
+        padding-bottom: 20px;
+    }
+    .bottom-row li a {
+        font-size: 20px;
+    }
+    #clear-completed {
+       margin: 10px auto 10px auto;
+    }
+    #clear-completed {
+        font-size: 20px;
+    }
+}
